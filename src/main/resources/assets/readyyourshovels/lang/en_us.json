@@ -15,6 +15,13 @@
   "block.readyyourshovels.tough_dirt_stairs": "Tough Dirt Stairs",
   "block.readyyourshovels.tough_dirt_slab": "Tough Dirt Slab",
   "block.readyyourshovels.tough_dirt_wall": "Tough Dirt Wall",
-  "block.readyyourshovels.regolith": "Regolith",
+  "block.readyyourshovels.oak_planter_box": "Oak Planter Box",
+  "block.readyyourshovels.birch_planter_box": "Birch Planter Box",
+  "block.readyyourshovels.spruce_planter_box": "Spruce Planter Box",
+  "block.readyyourshovels.dark_oak_planter_box": "Dark Oak Planter Box",
+  "block.readyyourshovels.acacia_planter_box": "Acacia Planter Box",
+  "block.readyyourshovels.jungle_planter_box": "Jungle Planter Box",
+  "block.readyyourshovels.crimson_planter_box": "Crimson Planter Box",
+  "block.readyyourshovels.warped_planter_box": "Warped Planter Box",
   "item.readyyourshovels.peat": "Peat"
 }

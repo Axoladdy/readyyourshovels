@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "#": {
+      "item": "readyyourshovels:peat"
+    },
+    "D": {
+      "item": "minecraft:birch_planks"
+    },
+    "B": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "readyyourshovels:birch_planter_box",
+    "count": 1
+  }
+}
