@@ -7,11 +7,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import teamhollow.readyyourshovels.Objects.Items.PeatItem;
 import teamhollow.readyyourshovels.ReadyYourShovelsCore;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = ReadyYourShovelsCore.MODID)
 public class RYSItems {
-    public static final Item PEAT = new Item(new Item.Properties().group(ItemGroup.MISC));
+    public static final Item PEAT = new PeatItem(new Item.Properties().group(ItemGroup.MATERIALS));
 
 
     public static void register(RegistryEvent.Register<Item> registry, Item item, String id) {

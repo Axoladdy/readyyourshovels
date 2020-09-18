@@ -9,6 +9,7 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import teamhollow.readyyourshovels.Objects.Blocks.PlanterBoxBlock;
 import teamhollow.readyyourshovels.ReadyYourShovelsCore;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = ReadyYourShovelsCore.MODID)
@@ -37,14 +38,14 @@ public class RYSBlocks {
     public static final Block TOUGH_DIRT_STAIRS = new StairsBlock(TOUGH_DIRT::getDefaultState, Block.Properties.create(Material.EARTH).harvestTool(ToolType.SHOVEL).setRequiresTool().harvestLevel(0).hardnessAndResistance(1.0F, 1.5F).sound(SoundType.GROUND));
     public static final Block TOUGH_DIRT_WALL = new WallBlock(AbstractBlock.Properties.from(TOUGH_DIRT));
 
-    public static final Block OAK_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block BIRCH_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block SPRUCE_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block DARK_OAK_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block ACACIA_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block JUNGLE_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block CRIMSON_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
-    public static final Block WARPED_PLANTER_BOX = new FarmlandBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block OAK_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block BIRCH_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block SPRUCE_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block DARK_OAK_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block ACACIA_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block JUNGLE_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block CRIMSON_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
+    public static final Block WARPED_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
 
 
 
