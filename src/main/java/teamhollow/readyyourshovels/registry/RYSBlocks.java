@@ -10,9 +10,10 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import teamhollow.readyyourshovels.Objects.Blocks.PlanterBoxBlock;
-import teamhollow.readyyourshovels.ReadyYourShovelsCore;
+import teamhollow.readyyourshovels.ReadyYourShovels;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = ReadyYourShovelsCore.MODID)
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = ReadyYourShovels.MODID)
 public class RYSBlocks {
     public static final Block CLAY_DEPOSIT = new Block(Block.Properties.create(Material.EARTH).harvestTool(ToolType.SHOVEL).setRequiresTool().harvestLevel(0).hardnessAndResistance(1.0F, 1.5F).sound(SoundType.GROUND));
 
@@ -47,7 +48,7 @@ public class RYSBlocks {
     public static final Block CRIMSON_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
     public static final Block WARPED_PLANTER_BOX = new PlanterBoxBlock(AbstractBlock.Properties.create(Material.WOOD).tickRandomly().hardnessAndResistance(2.5F).sound(SoundType.WOOD));
 
-
+    public static final Block GARDEN_ANT_NEST = new Block(AbstractBlock.Properties.create(Material.EARTH).hardnessAndResistance(1.0F, 1.5F).sound(SoundType.NYLIUM));
 
 
     @SubscribeEvent
