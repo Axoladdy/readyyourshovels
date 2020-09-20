@@ -23,5 +23,6 @@
   "block.readyyourshovels.jungle_planter_box": "Jungle Planter Box",
   "block.readyyourshovels.crimson_planter_box": "Crimson Planter Box",
   "block.readyyourshovels.warped_planter_box": "Warped Planter Box",
-  "item.readyyourshovels.peat": "Peat"
+  "item.readyyourshovels.peat": "Peat",
+  "entity.readyyourshovels.garden_ant": "Garden Ant"
 }

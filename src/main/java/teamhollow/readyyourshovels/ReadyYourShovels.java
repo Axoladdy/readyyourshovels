@@ -1,5 +1,6 @@
 package teamhollow.readyyourshovels;
 
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
@@ -9,6 +10,7 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,7 +21,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import teamhollow.readyyourshovels.Objects.Entities.GardenAntEntity;
 import teamhollow.readyyourshovels.registry.RYSBlocks;
+import teamhollow.readyyourshovels.registry.RYSEntities;
 import teamhollow.readyyourshovels.registry.RYSFeatures;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -39,6 +43,8 @@ public class ReadyYourShovels {
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        RYSEntities.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -46,6 +52,9 @@ public class ReadyYourShovels {
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
         this.setupWorldGen();
+        DeferredWorkQueue.runLater(() ->{
+            GlobalEntityTypeAttributes.put(RYSEntities.GARDEN_ANT.get(), GardenAntEntity.GardenAntAttribute().create());
+        });
     }
 
     private void setupWorldGen() {
